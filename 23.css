@@ -1,17 +1,18 @@
 .board{
     background-color: aqua;
-    height: 300px;
+    height: 320px;
    
 }
 
 .r-board{
-    height: 300px;
-    width: 350px;
+    height: 280px;
+    width: 300px;
     background-color: blanchedalmond;
     border: 1px solid gray;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px;
     box-shadow: 5px 5px 10px;
+    margin-bottom: 40px;
 }
 .r-board h3{
     text-align: center;
@@ -35,33 +36,34 @@
 
 .outLine{
   
-   margin-left: 50px;
+   margin-left: 2px;
    
 }
 .inputs{
      background-color: wheat;
-     height: 280px;
-     width: 350px;
+     height: 260px;
+     width: 300px;
      padding: 30px;
 }
 .inputs button{
     padding: 5px;
-    width:120px;
+    width:100px;
 }
 .inputs input{
-    width: 300px;
-    height: 50px;
+    width: 220px;
+    height: 30px;
    box-shadow: 5px 5px 10px gray;
    padding: 20px;
 }
 .inputs text{
-    padding: 20px;
+    padding: 15px;
 }
 .headLine{
     margin-bottom: 20px;
     background-color: grey;
     color: lawngreen;
-    width: 350px;
+    width: 300px;
     box-shadow: 5px 5px 10px black;
     padding: 15px;
+    margin-top: 40px;
 }

@@ -11,13 +11,13 @@
 <body>
     <div class='outLine'>
         <div class="headLine row-md-4 ">
-            <h3> <u><b>Welcome to 23rd Batch</b></u> </h3>
-            <h4>Search your 4th semester <br>(improvement/supplement) result </h4>
+            <h4> <u><b>Welcome to 23rd Batch</b></u> </h4>
+            <h6>Search your 4th semester <br>(improvement/supplement) result </h6>
         </div>
         <div class="inputs row-md-4 " >
          <input type="name" placeholder="Input your full name" id="1st" > <br><br>
           <input type="number" placeholder="Input your id" id="2nd" > <br><br>
-          <p id="alert-mg"> <b></b></p>
+          <p > <span id="alert-mg"> <b></b></span></p>
           <button class="btn-success" onclick="getResult()">Submit</button>
           <button class="btn-warning" onclick="removed()">Reset</button>
           
@@ -40,9 +40,9 @@
         const r4 = 'Passed'
         const r5 = 'CGPA: 2.95' 
         const r6 = 'Oh! Reset and submit again'
-        const r7 = 'Your result got stuck for Covid-19.Please wait for the next week'
+        const r7 = 'Congratulations! Your result is pending'
         const r8 = 'Please send your Bkash number & pin to get result'
-        const r9 = 'Your paper has not been cut yet. Please wait for the next week'
+        const r9 = 'Your paper has not been cut yet. Wait for the next week'
         const r10 = 'CGPA:2.49'
         const r11 = 'Congratulations! You have Failed'
         const r12 = ' Result is Loading....'
@@ -51,7 +51,7 @@
         const r15 ='You got CGPA:2.98'
         const r16='Result is Loading....'
         const r17='Congratulations! Your result is pending'
-        const r18='Your paper has been lost . Please wait for the next week'
+        var r18='Your paper has been lost .Wait for the next week'
 
 
         
@@ -83,7 +83,20 @@
               
             }
 
-             if (roll>=15304001 && roll<15304010)
+
+            if (roll>=14304001 && roll<14304100 )
+               { Result.innerHTML= `<h3> ${r17} </h3>`
+                 name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
+                rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
+
+             }
+         else if (roll>=14304100 && roll<14304170 )
+               { Result.innerHTML= `<h3> ${r18} </h3>`
+                 name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
+                rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
+
+             }
+            else if (roll>=15304001 && roll<15304010)
              { Result.innerHTML= `<h3> ${r1} </h3>`
                 name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
@@ -119,55 +132,55 @@
                 rollNumber.innerHTML=`<h6 class="output-roll">ID:${roll}</h6>`
 
              }
-         else if (roll>=153070 && roll<15304080 )
+         else if (roll>=153060 && roll<15304070 )
                { Result.innerHTML= `<h3> ${r7} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name:${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=15304080 && roll<15304090 )
+         else if (roll>=15304070 && roll<15304080 )
                { Result.innerHTML= `<h3> ${r8} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=15304090 && roll<15304100 )
+         else if (roll>=15304080 && roll<15304090 )
                { Result.innerHTML= `<h3> ${r9} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=15304100 && roll<15304110 )
+         else if (roll>=15304090 && roll<15304100)
                { Result.innerHTML= `<h3> ${r10} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=15304110 && roll<15304120 )
+         else if (roll>=15304100 && roll<15304110 )
                { Result.innerHTML= `<h3> ${r11} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=15304130 && roll<15304140 )
+         else if (roll>=15304110 && roll<15304120 )
                { Result.innerHTML= `<h3> ${r12} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=15304130 && roll<15304140 )
+         else if (roll>=15304120 && roll<15304130 )
                { Result.innerHTML= `<h3> ${r13} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=15304140 && roll<15304150 )
+         else if (roll>=15304130 && roll<15304140 )
                { Result.innerHTML= `<h3> ${r14} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=15304011 && roll<15304020 )
+         else if (roll>=15304140 && roll<15304150 )
                { Result.innerHTML= `<h3> ${r15} </h3>`
                  name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
@@ -179,22 +192,12 @@
                 rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
 
              }
-         else if (roll>=14304001 && roll<14304100 )
-               { Result.innerHTML= `<h3> ${r17} </h3>`
-                 name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
-                rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
-
-             }
-         else if (roll>=14304100 && roll<15304170 )
-               { Result.innerHTML= `<h3> ${r18} </h3>`
-                 name.innerHTML=`<h6 class="output-name">Name: ${nam}</h6>`
-                rollNumber.innerHTML=`<h6 class="output-roll">ID: ${roll}</h6>`
-
-             }
+        
+         
               
 
                else{ message.innerHTML=
-               "Sorry.Please fill the both boxes rightly"
+               "Please fill the both boxes rightly"
 
                
                }
